@@ -1,0 +1,13 @@
+.header {
+    background-color: tomato;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div a {
+    margin: 10px;
+}
