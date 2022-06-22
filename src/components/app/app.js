@@ -1,14 +1,19 @@
 import React from 'react';
 import Header from "../header/header";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Rates from "../rates/rates";
+import Converter from "../converter/converter";
 
 const App = () => {
     return (
-        <React.Fragment>
             <BrowserRouter>
-                <Header />
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<Rates/>}/>
+                    <Route path="/rates" element={<Rates/>}/>
+                    <Route path="/converter" element={<Converter/>}/>
+                </Routes>
             </BrowserRouter>
-        </React.Fragment>
     )
 }
 

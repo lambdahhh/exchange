@@ -5,8 +5,10 @@ import {Link} from "react-router-dom";
 const Header = () => {
     return (
         <div className="header">
-            <div>
-                КУРС ВАЛЮТ
+            <div className="header-brand">
+                <Link to="/">
+                    КУРС ВАЛЮТ
+                </Link>
             </div>
             <div>
                 <Link to="/rates">Список валют</Link>

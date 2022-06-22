@@ -11,3 +11,8 @@
 div a {
     margin: 10px;
 }
+
+.header-brand a {
+    text-decoration: none;
+    color: white;
+}
